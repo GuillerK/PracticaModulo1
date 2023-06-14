@@ -1,0 +1,186 @@
+*{
+    --color-font-primary: #000000;
+    --color-font-secondary: #ffffff;
+    --color-background: #ffffff;
+    --font-size-default: 18px;
+    --color-font-third: rgb(234,198,19);
+    --color-font-fourth: rgb(244,243,239);
+    --color-button1: rgb(234,198,19);
+    --color-background-footer: rgb(1,1,1);
+    box-sizing: border-box
+}
+
+body {
+    background-color:var(--color-background);
+    color:var(--color-font-primary) ;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--font-size-default);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-font-primary);
+}
+
+.col-redes a {
+    justify-content: space-between;
+    align-items: auto;
+}
+
+.bread a{
+    color: grey;
+}
+
+.bread a:hover {
+    color: var(--color-font-third);
+}
+
+.bread p {
+    font-size: 12px;
+}
+
+.bread span {
+    font-weight: bold;
+}
+
+.main-header {
+    border-bottom: 2px solid #D9D9D9;
+    padding: 25px 0;
+}
+
+.main-header-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "redes logo botones"
+    "menu menu menu";
+    max-width: 1180px;
+    margin: auto;
+}
+
+.col-redes {
+    grid-area: redes;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-logo {
+    grid-area: logo;
+    text-align: center;
+}
+
+.col-btn {
+    grid-area: botones;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-nav {
+    grid-area: menu;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-nav > ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.main-footer-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 48px;
+    max-width: 1180px;
+
+}
+
+.main-footer {
+    background-color: var(--color-background-footer);
+    color: var(--color-font-secondary);
+    padding: 60px 0;
+    
+}
+
+.main-footer a {
+    color: var(--color-font-secondary);
+}
+
+.main-footer h2 {
+    color: var(--color-font-third);
+
+}
+
+.footer-contact a {
+    color: var(--color-font-third);
+    font-weight: bold;
+}
+
+.asterisco span {
+    color: var(--color-font-third);
+    font-weight: bold;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 524px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.btn{
+    padding: 10px 20px;
+    gap: 10px;
+    border: 0;
+}
+
+.btn-primary {
+    background-color: var(--color-font-third);
+
+}
+
+.password-id {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 524px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 40px 0 60px 0;
+}
+
+.follow-us-grid {
+
+}
